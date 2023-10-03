@@ -1,11 +1,21 @@
+<a name="readme-top"></a>
+
+<div align="center">
+  <img src="./logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>School Library</b></h3>
+
+</div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 My Enumerable ](#-my-enumerable-)
+- [📖 About the Project ](#-about-the-project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -18,38 +28,37 @@
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
-<a name="readme-top"></a>
-
-
-
-# 📖 My Enumerable <a name="about-project"></a>
-
-
-**SCHOOL LIBRARY**
-This is a library management system
-
+# 📖 About the Project <a name="about-project"></a>
+In this project, you will start building your school library app. In this initial step, you will implement the classes to represent students and teachers.
+**School Library** 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-<summary>Ruby</summary>
+  <summary>Client</summary>
   <ul>
     <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
-- **[Custom Enumerable Methods: This project offers custom #all?, #any?, and #filter methods through the MyEnumerable module, extending Ruby's core Enumerable functionality.]**
-- **[MyList Class: Introducing the MyList class for seamless iteration and manipulation of collections using the custom enumerable methods.]**
-- **[Robust Testing: Rigorous testing in the IRB environment ensures the accuracy and reliability of the custom methods, guaranteeing their adherence to project requirements.]**
-<!-- GETTING STARTED -->
+- **Contains data about students**
+- **Contains data about teachers**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- No link
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -59,75 +68,54 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- An IDE (ex: VS Code)
+- Github account
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
-  cd my-folder
-  git clone git@github.com:obibaadoma/school_library.git
+  cd project-folder
+  git clone https://github.com/obibaadoma/School_Library.git
 ```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+Install this project with webpack:
 
 ```sh
-  cd my-project
-  gem install
+  cd project-folder
+  npm run build
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+  npm start
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+  npm run test
 ```
---->
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using GitPages:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- Go to github.com
+- Create a new repository
+- Add all website files in the new repository
+- Go to Settings/Pages
+- Go to branch and change from 'none' to 'main'
+- Click Save
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,22 +123,18 @@ Example:
 
 👤 **Derek Akrasi Konadu**
 
- **GitHub**  | [@githubhandle](https://github.com/obibaadoma)
-**Twitter**: [@twitterhandle](https://twitter.com/obibakwekuadoma)
-**LinkedIn**: [LinkedIn](https://linkedin.com/in/derek-akrasi-konadu)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub: [@Derek](https://github.com/obibaadoma)
+- Twitter: [@Derek](https://twitter.com/obibakwekuadoma)
+- LinkedIn: [Derek Akrasi Konadu](https://www.linkedin.com/in/derek-akrasi-konadu)
 
-<!-- FUTURE FEATURES -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[map Method]**
-- **[reduce Method]**
-- **[sort Method]**
+- [ ] **More data**
+- [ ] **More quries**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -160,26 +144,28 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, star the project if you like it
+If you like this project and wish to collaborate. Please contact me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my mentor and my cod partners for support
+- Thank you Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE. -->
+## ❓ FAQ <a name="faq"></a>
+
+- **Is it responsive?**
+
+  - Yes, works both on mobile and desktop.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed..
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
