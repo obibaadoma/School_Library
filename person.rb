@@ -1,5 +1,6 @@
 # Class containing data about a person
 require_relative 'nameable'
+require './rental'
 
 class Person < nameable
   # Fixed the class name to inherit from Nameable (capitalized)
