@@ -1,9 +1,13 @@
-# Class containing data about person
-class Person
+# Class containing data about a person
+require_relative 'nameable'
+
+class Person < nameable
+  # Fixed the class name to inherit from Nameable (capitalized)
   attr_accessor :name, :age
   attr_reader :id
 
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super() # Call the superclass constructor with no arguments
     @id = rand(1..1000)
     @name = name
     @age = age
