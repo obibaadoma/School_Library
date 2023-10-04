@@ -14,6 +14,10 @@ class Person < nameable
     @parent_permission = parent_permission
   end
 
+  def add_rental(rental)
+    @rentals << rental
+  end
+
   private
 
   def of_age?
