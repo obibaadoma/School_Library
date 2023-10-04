@@ -25,4 +25,8 @@ class Person < nameable
   def can_use_services?
     of_age? || @parent_permission
   end
+
+  def correct_name
+    raise NotImplementedError, 'Subclasses must implement this method'
+  end
 end

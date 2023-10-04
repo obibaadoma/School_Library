@@ -1,18 +1,13 @@
-class Nameable
-  def initialize(name)
-    @name = name
+class Decorator < Nameable
+  attr_accessor :nameable
+
+  def initialize(nameable)
+    super() # Call super to initialize the parent class (Nameable)
+    @nameable = nameable
   end
 
   def correct_name
-    @name
-  end
-end
-
-class Decorator < Nameable
-  def initialize(nameable, additional_info)
-    super(nameable.correct_name)
-    # Call super with the result of parent class's constructor
-    @additional_info = additional_info
+    @nameable.correct_name
   end
 end
 
