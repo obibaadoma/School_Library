@@ -27,6 +27,6 @@ class Person < nameable
   end
 
   def correct_name
-    raise NotImplementedError, 'Subclasses must implement this method'
+    @nameable.correct_name
   end
 end
