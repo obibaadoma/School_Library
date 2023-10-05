@@ -7,16 +7,22 @@ class App
 
   def select_opt
     option = gets.chomp.to_i
-    case option
-    when 1 then list_books
-    when 2 then list_people
-    when 3 then create_person
-    when 4 then create_book
-    when 5 then create_rental
-    when 6 then list_rentals
-    when 7 then exit
+
+    actions = {
+      1 => method(:list_books),
+      2 => method(:list_people),
+      3 => method(:create_person),
+      4 => method(:create_book),
+      5 => method(:create_rental),
+      6 => method(:list_rentals),
+      7 => method(:exit)
+    }
+
+    action = actions[option]
+    if action
+      action.call
     else
-      puts 'Invalid number, please try again!'
+      handle_invalid_option
     end
   end
 
