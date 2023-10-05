@@ -1,22 +1,21 @@
-# Class containing data about a person
 require_relative 'nameable'
 require './rental'
 
-class Person < nameable
-  # Fixed the class name to inherit from Nameable (capitalized)
-  attr_accessor :name, :age
+class Person < Nameable
+  attr_accessor :name, :age, :rentals
   attr_reader :id
 
   def initialize(age, name = 'Unknown', parent_permission: true)
-    super() # Call the superclass constructor with no arguments
+    super(age, parent_permission)
+    # Call the superclass constructor with no arguments
     @id = rand(1..1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
   end
 
-  def add_rental(rental)
-    @rentals << rental
+  def add_rental(book, date)
+    Rental.new(date, book, self)
   end
 
   private

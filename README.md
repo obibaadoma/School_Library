@@ -46,9 +46,7 @@ This is a library management system
 
 ### Key Features <a name="key-features"></a>
 
-- **[Custom Enumerable Methods: This project offers custom #all?, #any?, and #filter methods through the MyEnumerable module, extending Ruby's core Enumerable functionality.]**
-- **[MyList Class: Introducing the MyList class for seamless iteration and manipulation of collections using the custom enumerable methods.]**
-- **[Robust Testing: Rigorous testing in the IRB environment ensures the accuracy and reliability of the custom methods, guaranteeing their adherence to project requirements.]**
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
