@@ -12,4 +12,3 @@ class Classroom
     @students << student
   end
 end
-end
