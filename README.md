@@ -51,7 +51,7 @@ Book Availability: The app displays the current availability status of each book
 
 Reservation: Users can reserve a book they wish to borrow. When reserving, they should specify the desired pickup date.
 
-<!-- GETTING STARTED -->
+<!-- GETTING STARTED... -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
