@@ -100,7 +100,10 @@ class App
   end
 
   def list_people
+    puts 'People: '
+    @people.each { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
     display_items(@people, 'People', '[%s] Name: %s, ID: %d, Age: %d')
+    puts ''
   end
 
   def create_book
