@@ -1,4 +1,6 @@
 # Student class represents a student with classroom information.
+require_relative 'person'
+
 class Student < Person
   attr_reader :classroom
 
