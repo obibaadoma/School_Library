@@ -49,7 +49,7 @@ This is a library management system
 
 Book Availability: The app displays the current availability status of each book, indicating whether it's available, checked out, or reserved by others.
 
-Reservation: Users can reserve a book they wish to borrow. When reserving, they should specify the desired pickup date.
+Reservation: Users can reserve a book they wish to borrow. When reserving, they should specify the desired pickup date..
 
 <!-- GETTING STARTED... -->
 
