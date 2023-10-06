@@ -6,8 +6,6 @@ require_relative 'person'
 require_relative 'book'
 require_relative 'rental'
 
-# !/usr/bin/env ruby
-
 class Book
   attr_accessor :title, :author
 
