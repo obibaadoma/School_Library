@@ -45,7 +45,11 @@ This is a library management system
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
+ Book Search: Users can search for books by title, author, genre, or ISBN to find the book they want to reserve.
 
+Book Availability: The app displays the current availability status of each book, indicating whether it's available, checked out, or reserved by others.
+
+Reservation: Users can reserve a book they wish to borrow. When reserving, they should specify the desired pickup date.
 
 <!-- GETTING STARTED -->
 
@@ -139,6 +143,8 @@ Example:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
+ [Online-reservations]
+ [User-Interface]
 
 ## 🔭 Future Features <a name="future-features"></a>
 
