@@ -1,30 +1,46 @@
 require_relative 'app'
 
-class Main
-  def initialize
-    @app = App.new
-  end
+def show_options
+  puts ''
+  puts 'Please choose an option by entering a number:'
+  puts '1 - List all books'
+  puts '2 - List all people'
+  puts '3 - Create a person'
+  puts '4 - Create a book'
+  puts '5 - Create a rental'
+  puts '6 - List all rentals for a given person id'
+  puts '7 - Exit'
+end
 
-  def print_question
-    puts "Please choose an option by entering a number:
-      1- List all books.
-      2- List all people.
-      3- Create a person.
-      4- Create a book.
-      5- Create a rental.
-      6- List all rentals for a given person id.
-      7- Exit."
-  end
+def main
+  app = App.new
 
-  def run
-    puts 'Welcome to the library Application!'
-    loop do
-      print_question
-      selected_option = @app.select_opt
-      break if selected_option == 7
+  loop do
+    show_options
+    option = gets.chomp.to_i
+
+    if option == 7
+      puts 'Thank you for using this app!'
+      break
+    else
+      case option
+      when 1
+        app.list_books
+      when 2
+        app.list_people
+      when 3
+        app.create_person
+      when 4
+        app.create_book
+      when 5
+        app.create_rental
+      when 6
+        app.list_rentals
+      else
+        puts 'Error: Invalid number, try again'
+      end
     end
-    puts 'Thanks for using this App!!'
   end
 end
 
-Main.new.run
+main

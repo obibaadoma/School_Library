@@ -1,7 +1,8 @@
-require './rental'
+require_relative 'rental'
 
 class Book
-  attr_accessor :title, :author, :rentals
+  attr_accessor :title, :author
+  attr_reader :rentals
 
   def initialize(title, author)
     @title = title
@@ -9,8 +10,7 @@ class Book
     @rentals = []
   end
 
-  def add_rental(person, date)
-    # *the book itself should be sent as a parameter to create the new rental achieving the 'has-many' association.
-    Rental.new(date, self, person)
+  def add_rental(date, person)
+    Rental.new(date, person, self)
   end
 end

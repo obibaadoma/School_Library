@@ -1,13 +1,10 @@
-# This class inherits from the Person class and adds a specialization attribute.
-# Teachers can use services.
-
 require_relative 'person'
-# Teacher class represents a teacher with a specialization.
+
 class Teacher < Person
   attr_accessor :specialization
 
-  def initialize(id, age, specialization, parent_permission: true)
-    super(id, age, parent_permission)
+  def initialize(age, specialization, name: 'Unknown', parent_permission: true)
+    super(age, name: name, parent_permission: parent_permission)
     @specialization = specialization
   end
 
