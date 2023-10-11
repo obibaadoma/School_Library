@@ -67,7 +67,7 @@ In order to run this project you need:
 Example command:
 
 ```sh
- gem install rails
+ gem install ruby
 ```
  -->
 
@@ -92,7 +92,7 @@ Install this project with:
 Example command:
 
 ```sh
-  cd my-project
+  cd school_library
   gem install
 ```
 --->
@@ -105,7 +105,7 @@ To run the project, execute the following command:
 Example command:
 
 ```sh
-  rails server
+  ruby server
 ```
 --->
 
@@ -117,13 +117,13 @@ To run tests, run the following command:
 Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  bin/ruby test test/models/article_test.rb
 ```
 --->
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: Gitthub pages
 
 <!--
 Example:
