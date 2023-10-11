@@ -5,7 +5,7 @@ class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id, :rentals
 
-  def initialize(id, age, name = 'unknown', parent_permission: true)
+  def initialize(_id, age, name = 'unknown', parent_permission: true)
     @id = generate_id
     @name = name
     @age = age
@@ -33,8 +33,8 @@ class Person < Nameable
   end
 
   def generate_id
-    timestamp = Time.now.to_i
-    random_id = rand(1000..9999)
+    Time.now.to_i
+    rand(1000..9999)
     @id = id
     id.to_i
   end
