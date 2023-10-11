@@ -147,6 +147,10 @@ Example:
 - GitHub: [@githubhandle](https://github.com/mohamedgamaleldin999999)
 - Twitter: [@twitterhandle](https://twitter.com/Mohamme43086002)
 
+### 👤 **Wael Elsafty**
+
+- GitHub: [@githubhandle](https://github.com/waelelsafty07)
+- Twitter: [@linkedin](https://linkedin.com/in/waelelsafty07)
 
 <!-- FUTURE FEATURES -->
  [Online-reservations]
