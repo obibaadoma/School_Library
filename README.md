@@ -142,6 +142,12 @@ Example:
 **LinkedIn**: [LinkedIn](https://linkedin.com/in/derek-akrasi-konadu)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### 👤 **Mohamed-Gamaleldin**
+
+- GitHub: [@githubhandle](https://github.com/mohamedgamaleldin999999)
+- Twitter: [@twitterhandle](https://twitter.com/Mohamme43086002)
+
+
 <!-- FUTURE FEATURES -->
  [Online-reservations]
  [User-Interface]
