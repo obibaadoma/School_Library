@@ -53,74 +53,57 @@ Book Availability: The app displays the current availability status of each book
 
 Reservation: Users can reserve a book they wish to borrow. When reserving, they should specify the desired pickup date..
 
-<!-- GETTING STARTED.. -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps...
+To get a local copy up and running, follow these steps.
+- Laptop
+- Github
+- Git
+- Ruby
+- Linters 
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install ruby
-```
- -->
+- Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/).
+- Create a repo on your repositores files.
+- Clone or make a copy of this repo on your local machine.
+- Follow GitHub flow.
+- A carefully reading of this README.md is required.
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:obibaadoma/school_library.git
+  git clone https://github.com/obibaadoma/school-library.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd school_library
-  gem install
+  bundle install
 ```
---->
 
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
-Example command:
+To run the project, run the following command:
 
 ```sh
-  ruby server
+  ruby main.rb
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
-```sh
-  bin/ruby test test/models/article_test.rb
 ```
---->
-
+rubocop
+```
 ### Deployment
 
 You can deploy this project using: Gitthub pages
