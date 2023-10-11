@@ -2,13 +2,15 @@ require_relative 'student'
 require_relative 'teacher'
 require_relative 'book'
 require_relative 'rental'
-
+require './modules/load_storage'
 class App
+  include LoadStorage
   def initialize
     puts 'Welcome to School Library App!'
-    @books = []
-    @people = []
-    @rentals = []
+
+    @books = load_books_data
+    @people = load_people_data
+    @rentals = load_rentals_data
   end
 
   def list_books
@@ -80,17 +82,18 @@ class App
     @books.each_with_index do |book, index|
       puts "#{index}) Title: \"#{book.title}\", Author: #{book.author}"
     end
-    book_index = gets.chomp.to_i
+    gets.chomp.to_i
     puts ''
     puts 'Select a person from the following list by number (not id)'
     @people.each_with_index do |person, index|
       puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, AGE: #{person.age}"
     end
-    person_index = gets.chomp.to_i
+    gets.chomp.to_i
     puts ''
     print 'Date: '
-    rent_date = gets.chomp.to_s
-    @rentals << Rental.new(rent_date, @people[person_index], @books[book_index])
+    gets.chomp.to_s
+    rental = Rental.new(date, @books[index_book], @people[index_person], [index_person, index_book])
+    @rentals << rental
     puts 'Rental created successfully'
   end
 end
