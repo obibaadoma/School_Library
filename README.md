@@ -2,7 +2,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 My Enumerable ](#-my-enumerable-)
+- [📖 SCHOOL LIBRARY ](#-school-library-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -14,6 +14,8 @@
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
+    - [👤 **Mohamed-Gamaleldin**](#-mohamed-gamaleldin)
+    - [👤 **Wael Elsafty**](#-wael-elsafty)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -24,7 +26,7 @@
 
 
 
-# 📖 My Enumerable <a name="about-project"></a>
+# 📖 SCHOOL LIBRARY <a name="about-project"></a>
 
 
 **SCHOOL LIBRARY**
