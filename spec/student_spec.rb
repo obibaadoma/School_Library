@@ -1,5 +1,5 @@
-require '../student'
-require '../classroom'
+require_relative '../student'
+require_relative '../classroom'
 describe Student do
   before(:all) do
     @student = Student.new(20, 'Lucca', parent_permission: true)
