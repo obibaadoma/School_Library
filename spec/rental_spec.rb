@@ -1,33 +1,25 @@
 require_relative '../rental'
-require_relative '../teacher'
 require_relative '../book'
-require_relative '../student'
-require_relative '../classroom'
 require_relative '../person'
 
 describe Rental do
-  before(:all) do
-    # @teacher = Teacher.new('Medical', 60, 'Abubakar')
-    @person = Person.new(20, 'Lucca', parent_permission: true)
-    @book = Book.new('Pinocho', 'Amare')
-    @rentals = Rental.new('01-15-2023', @book, @person)
+  before(:each) do
+    @book = Book.new('Pinocho', 'Author')
+    @person = Person.new(25, 'Abubakar', parent_permission: true)
+    @rental = Rental.new('01-15-2023', @person, @book)
   end
 
-  context 'When testing the rentals class' do
+  context 'When testing the Rental class' do
     it 'The date must be: 01-15-2023' do
-      expect(@rentals.date).to eq '01-15-2023'
+      expect(@rental.date).to eq '01-15-2023'
     end
-  end
 
-  context 'When testing the rentals class' do
-    it 'The name the book ok this rental must be: Pinocho' do
-      expect(@book.title).to eq 'Pinocho'
+    it 'The name of the book on this rental must be: Pinocho' do
+      expect(@rental.book.title).to eq 'Pinocho'
     end
-  end
 
-  context 'When testing the rentals class' do
-    it 'The name the person who rented the book must be Abubakar' do
-      expect(@person.name).to eq 'Lucca'
+    it 'The name of the person who rented the book must be: Abubakar' do
+      expect(@rental.person.name).to eq 'Abubakar'
     end
   end
 end

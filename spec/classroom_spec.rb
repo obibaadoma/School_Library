@@ -2,19 +2,18 @@ require_relative '../classroom'
 require_relative '../student'
 
 describe Classroom do
-  context 'When testing the classroom class' do
-    it 'The label must contain: class b' do
-      classrm = Classroom.new('class b')
-      expect(classrm.label).to eq 'class b'
-    end
+  before(:each) do
+    @classroom = Classroom.new
   end
 
-  context 'When testing the classroom class' do
-    it ' The method add student must add one student and shows the name' do
-      classroom = Classroom.new('class b')
-      student = Student.new(50, 'Jhosep', parent_permission: true)
-      classroom.add_student(student)
-      expect(classroom.students[0].name).to eq 'Jhosep'
+  context 'When testing the Classroom class' do
+    it 'The method add_student must add one student and shows the name' do
+      student = Student.new(20, 'John Doe')
+      @classroom.add_student(student)
+      added_student = @classroom.students.first
+
+      expect(@classroom.students.length).to eq 1
+      expect(added_student.name).to eq 'John Doe'
     end
   end
 end
