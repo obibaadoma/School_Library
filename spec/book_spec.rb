@@ -1,6 +1,5 @@
 require_relative '../book'
 
-
 describe Book do
   context 'When testing the books class' do
     it 'title must contain: Pinocho' do
